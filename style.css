@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 20px;
+}
+
+/* navbar */
+.navBar {
+    background-color: darkred;
+    color: #fff;
+    overflow: auto;
+}
+
+
+.navBar i{
+    margin:20px;
+    font-size: 23px;
+}
+
+.navBar a {
+    color: white;
+    text-decoration: none;
+}
+
+.navBar ul {
+    float: right;
+    list-style: none;
+}
+
+.navBar ul li {
+    display: inline-block;
+}
+
+.navBar ul li a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+    transition: all 1s;
+}
+
+.navBar ul li a:hover {
+    background-color: #ffffff5e;
+}
+
+/* end navbar */
+
+/* media of nav */
+
+@media (max-width : 600px) {
+    .navBar{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* media */
+
+/* lorem */
+
+.lorem{
+    width: 90%;
+    margin-top: 60px;
+}
+.lorem .pic img{
+    display: inline-block;
+    width: 230px;
+    height: 230px;
+    margin-top:-190px ;
+}
+.lorem .pic{
+      float: right;
+
+}
+.lorem .pre{
+    width: 700px;
+}
+.lorem .pre pre{
+    line-height: 30px;
+    font-size: 22px;
+}
+/* end lorem */
+
+/* media of lorem */
+
+@media (max-width : 1100px) {
+    .lorem .pre {
+        width: 60% ;
+        min-height: 0;
+        display: block;
+    }
+    .lorem .pre pre{
+        font-size: 22px;
+    }
+    .lorem .pic img{
+        transform: translate(-200px , 200px);
+    }
+}
+@media (max-width:770px) {
+    .lorem .pre pre{
+       font-size: 12px;
+    }
+}
+@media (max-width:530px) {
+    .lorem .pic img{
+        margin-left: 250px;
+    }
+}
+/* lorem end */
+.cards{
+    margin-top: 130px;
+}
+.cards img{
+
+    width: 250px;
+    height: 250px;
+}
+.cards .img1{
+    margin-right: 250px;
+}
+.cards .img2{
+    margin-right: 250px;
+}
+
+/* end cards */
+
+/* media cards */
+@media (max-width : 1115px) {
+ .cards .img1{
+    /* margin-right: 140px; */
+ }
+ .cards .img2{
+    /* margin-right: 140px; */
+ }
+    
+}
+@media (max-width:1100px) {
+    .lorem {
+        margin-bottom: 200px;
+    }
+    .cards{
+        margin-top: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .cards img{
+      margin: auto;
+      padding: 40px;
+      
+        
+
+}
+}
